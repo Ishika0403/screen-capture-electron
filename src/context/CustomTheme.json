@@ -1,0 +1,391 @@
+{
+  "defaultTheme": {
+      "mode": "light",
+      "palette": {
+          "common": {
+              "transparent": "transparent",
+              "white": "#fff",
+              "black": "#121212"
+          },
+          "mode": {
+              "light": {
+                  "primary": {
+                      "main": "#1d78f3",
+                      "hover": "#175ec3",
+                      "contrastText": "#fff"
+                  },
+                  "secondary": {
+                      "main": "#28a745",
+                      "hover": "#155324",
+                      "contrastText": "#fff"
+                  },
+                  "accent": {
+                      "main": "#800080",
+                      "hover": "#3f193f",
+                      "contrastText": "#fff"
+                  },
+                  "error": {
+                      "main": "#dc3545",
+                      "hover": "#b32230",
+                      "contrastText": "#ff"
+                  },
+                  "paper": {
+                      "background": "#f1f1f1",
+                      "border": "1px solid #f1f1f1",
+                      "shadow": "box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px",
+                      "hover": "rgba(0, 0, 0, 0.04)",
+                      "text": "#222"
+                  },
+                  "typography": {
+                      "primary": "rgba(0, 0, 0, 0.87)",
+                      "secondary": "rgba(0, 0, 0, 0.6)",
+                      "disabled": "rgba(0, 0, 0, 0.38)",
+                      "success": "#2e7d32",
+                      "warning": "#ffc107",
+                      "danger": "#dc3f45",
+                      "info": "#0dcaf0"
+                  },
+                  "action": {
+                      "active": " rgba(0, 0, 0, 0.54)",
+                      "activatedOpacity": 0.12,
+                      "hover": " rgba(0, 0, 0, 0.04)",
+                      "hoverOpacity": 0.2,
+                      "inActive": "#5e5c5c",
+                      "selected": "rgba(0, 0, 0, 0.08)",
+                      "selectedOpacity": 0.08,
+                      "disabled": "rgba(0, 0, 0, 0.26)",
+                      "disabledBackground": "rgba(0, 0, 0, 0.12)",
+                      "disabledOpacity": 0.38,
+                      "focus": "rgba(0, 0, 0, 0.12)",
+                      "focusOpacity": 0.12,
+                      "cursor": "not-allowed"
+                  }
+              },
+              "dark": {
+                  "primary": {
+                      "main": "#1d78f3",
+                      "hover": "#175ec3",
+                      "contrastText": "#fff"
+                  },
+
+                  "secondary": {
+                      "main": "#28a745",
+                      "hover": "#155324",
+                      "contrastText": "#fff"
+                  },
+                  "accent": {
+                      "main": "#800080",
+                      "hover": "#3f193f",
+                      "contrastText": "#fff"
+                  },
+                  "paper": {
+                      "background": "#212121",
+                      "border": "1px solid #212121",
+                      "shadow": "box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px",
+                      "hover": "rgba(0, 0, 0, 0.04)",
+                      "text": "#fff"
+                  },
+
+                  "error": {
+                      "main": "#dc3545",
+                      "hover": "#b32230",
+                      "contrastText": "#fff"
+                  },
+                  "typography": {
+                      "primary": "#fff",
+                      "secondary": "rgba(255, 255, 255, 0.7)",
+                      "disabled": "rgba(255, 255, 255, 0.5)",
+                      "success": "#2e7d32",
+                      "warning": "#ffc107",
+                      "danger": "#dc3f45",
+                      "info": "#0dcaf0"
+                  },
+                  "action": {
+                      "inActive": "#5e5c5c",
+                      "active": " #fff",
+                      "hoverOpacity": 0.2,
+                      "hover": "rgba(255, 255, 255, 0.08)",
+                      "selected": "rgba(255, 255, 255, 0.16)",
+                      "selectedOpacity": 0.08,
+                      "disabled": "rgba(255, 255, 255, 0.5)",
+                      "disabledBackground": "rgba(0, 0, 0, 0.12)",
+                      "disabledOpacity": 0.38,
+                      "focus": "rgba(255, 255, 255, 0.16)",
+                      "focusOpacity": 0.12,
+                      "activatedOpacity": 0.12,
+                      "cursor": "not-allowed"
+                  }
+              }
+          }
+      },
+      "shadows": {
+          "0": "none",
+          "1": "0px 5px 10px rgba(0, 0, 0, 0.12)",
+          "2": "0px 8px 30px rgba(0, 0, 0, 0.24)",
+          "3": "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px"
+      },
+      "shape": {
+          "borderRadius": { "spacing": ["xxsmall"] }
+      }
+  },
+  "sobeysTheme": {
+      "mode": "light",
+      "palette": {
+          "common": {
+              "transparent": "transparent",
+              "white": "#fff",
+              "black": "#121212"
+          },
+          "mode": {
+              "light": {
+                  "primary": {
+                      "main": "#006241",
+                      "hover": "#004930",
+                      "contrastText": "#fff"
+                  },
+                  "secondary": {
+                      "main": "#28a745",
+                      "hover": "#155324",
+                      "contrastText": "#fff"
+                  },
+                  "accent": {
+                      "main": "#800080",
+                      "hover": "#3f193f",
+                      "contrastText": "#fff"
+                  },
+                  "error": {
+                      "main": "#dc3545",
+                      "hover": "#b32230",
+                      "contrastText": "#fff"
+                  },
+                  "paper": {
+                      "background": "#f1f1f1",
+                      "border": "1px solid #f1f1f1",
+                      "shadow": "box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px",
+                      "hover": "rgba(0, 0, 0, 0.04)",
+                      "text": "#222"
+                  },
+                  "typography": {
+                      "primary": "rgba(0, 0, 0, 0.87)",
+                      "secondary": "rgba(0, 0, 0, 0.6)",
+                      "disabled": "rgba(0, 0, 0, 0.38)",
+                      "success": "#2e7d32",
+                      "warning": "#ffc107",
+                      "danger": "#dc3f45",
+                      "info": "#0dcaf0"
+                  },
+                  "action": {
+                      "active": " rgba(0, 0, 0, 0.54)",
+                      "activatedOpacity": 0.12,
+                      "hover": " rgba(0, 0, 0, 0.04)",
+                      "hoverOpacity": 0.2,
+                      "inActive": "#5e5c5c",
+                      "selected": "rgba(0, 0, 0, 0.08)",
+                      "selectedOpacity": 0.08,
+                      "disabled": "rgba(0, 0, 0, 0.26)",
+                      "disabledBackground": "rgba(0, 0, 0, 0.12)",
+                      "disabledOpacity": 0.38,
+                      "focus": "rgba(0, 0, 0, 0.12)",
+                      "focusOpacity": 0.12,
+                      "cursor": "not-allowed"
+                  }
+              },
+              "dark": {
+                  "primary": {
+                      "main": "#006241",
+                      "hover": "#004930",
+                      "contrastText": "#fff"
+                  },
+
+                  "secondary": {
+                      "main": "#28a745",
+                      "hover": "#155324",
+                      "contrastText": "#fff"
+                  },
+                  "accent": {
+                      "main": "#800080",
+                      "hover": "#3f193f",
+                      "contrastText": "#fff"
+                  },
+                  "paper": {
+                      "background": "#212121",
+                      "border": "1px solid #212121",
+                      "shadow": "box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px",
+                      "hover": "rgba(0, 0, 0, 0.04)",
+                      "text": "#fff"
+                  },
+
+                  "error": {
+                      "main": "#dc3545",
+                      "hover": "#b32230",
+                      "contrastText": "#fff"
+                  },
+                  "typography": {
+                      "primary": "#fff",
+                      "secondary": "rgba(255, 255, 255, 0.7)",
+                      "disabled": "rgba(255, 255, 255, 0.5)",
+                      "success": "#2e7d32",
+                      "warning": "#ffc107",
+                      "danger": "#dc3f45",
+                      "info": "#0dcaf0"
+                  },
+                  "action": {
+                      "inActive": "#5e5c5c",
+                      "active": " #fff",
+                      "hoverOpacity": 0.2,
+                      "hover": "rgba(255, 255, 255, 0.08)",
+                      "selected": "rgba(255, 255, 255, 0.16)",
+                      "selectedOpacity": 0.08,
+                      "disabled": "rgba(255, 255, 255, 0.5)",
+                      "disabledBackground": "rgba(0, 0, 0, 0.12)",
+                      "disabledOpacity": 0.38,
+                      "focus": "rgba(255, 255, 255, 0.16)",
+                      "focusOpacity": 0.12,
+                      "activatedOpacity": 0.12,
+                      "cursor": "not-allowed"
+                  }
+              }
+          }
+      },
+      "shadows": {
+          "0": "none",
+          "1": "0px 5px 10px rgba(0, 0, 0, 0.12)",
+          "2": "0px 8px 30px rgba(0, 0, 0, 0.24)",
+          "3": "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px"
+      },
+      "shape": {
+          "borderRadius": { "spacing": ["xxsmall"] }
+      }
+  },
+  "beerStoreTheme": {
+      "mode": "light",
+      "palette": {
+          "common": {
+              "transparent": "transparent",
+              "white": "#e5e5e5",
+              "black": "#121212"
+          },
+          "mode": {
+              "light": {
+                  "primary": {
+                      "main": "#f4b233",
+                      "hover": "#E89D0C",
+                      "contrastText": "#000"
+                  },
+                  "secondary": {
+                      "main": "#000",
+                      "hover": "#000",
+                      "contrastText": "#fff"
+                  },
+                  "accent": {
+                      "main": "#08c12f",
+                      "hover": "#08c12f",
+                      "contrastText": "#fff"
+                  },
+                  "error": {
+                      "main": "#dc3545",
+                      "hover": "#b32230",
+                      "contrastText": "#fff"
+                  },
+                  "paper": {
+                      "background": "#fff",
+                      "border": "1px solid #ddd",
+                      "shadow": "box-shadow: 0px 7px 30px 0px rgba(0, 0, 0, 0.15)",
+                      "hover": "rgba(0, 0, 0, 0.04)",
+                      "text": "#000"
+                  },
+
+
+                  "typography": {
+                      "primary": "#000",
+                      "secondary": "rgba(0, 0, 0, 0.6)",
+                      "disabled": "rgba(0, 0, 0, 0.38)",
+                      "success": "#2e7d32",
+                      "warning": "#ffc107",
+                      "danger": "#dc3f45",
+                      "info": "#0dcaf0"
+                  },
+                  "action": {
+                      "active": " rgba(0, 0, 0, 0.54)",
+                      "activatedOpacity": 0.12,
+                      "hover": " rgba(0, 0, 0, 0.04)",
+                      "hoverOpacity": 0.2,
+                      "inActive": "#5e5c5c",
+                      "selected": "rgba(0, 0, 0, 0.08)",
+                      "selectedOpacity": 0.08,
+                      "disabled": "rgba(0, 0, 0, 0.26)",
+                      "disabledBackground": "rgba(0, 0, 0, 0.12)",
+                      "disabledOpacity": 0.38,
+                      "focus": "rgba(0, 0, 0, 0.12)",
+                      "focusOpacity": 0.12,
+                      "cursor": "not-allowed"
+                  }
+              },
+              "dark": {
+                  "primary": {
+                      "main": "#f4b233",
+                      "hover": "#E89D0C",
+                      "contrastText": "#000"
+                  },
+
+                  "secondary": {
+                      "main": "#28a745",
+                      "hover": "#155324",
+                      "contrastText": "#fff"
+                  },
+                  "accent": {
+                      "main": "#08c12f",
+                      "hover": "#08c12f",
+                      "contrastText": "#fff"
+                  },
+                  "paper": {
+                      "background": "#212121",
+                      "border": "1px solid #212121",
+                      "shadow": "box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px",
+                      "hover": "rgba(0, 0, 0, 0.04)",
+                      "text": "#fff"
+                  },
+
+                  "error": {
+                      "main": "#dc3545",
+                      "hover": "#b32230",
+                      "contrastText": "#fff"
+                  },
+                  "typography": {
+                      "primary": "#fff",
+                      "secondary": "rgba(255, 255, 255, 0.7)",
+                      "disabled": "rgba(255, 255, 255, 0.5)",
+                      "success": "#2e7d32",
+                      "warning": "#ffc107",
+                      "danger": "#dc3f45",
+                      "info": "#0dcaf0"
+                  },
+                  "action": {
+                      "inActive": "#5e5c5c",
+                      "active": " #fff",
+                      "hoverOpacity": 0.2,
+                      "hover": "rgba(255, 255, 255, 0.08)",
+                      "selected": "rgba(255, 255, 255, 0.16)",
+                      "selectedOpacity": 0.08,
+                      "disabled": "rgba(255, 255, 255, 0.5)",
+                      "disabledBackground": "rgba(0, 0, 0, 0.12)",
+                      "disabledOpacity": 0.38,
+                      "focus": "rgba(255, 255, 255, 0.16)",
+                      "focusOpacity": 0.12,
+                      "activatedOpacity": 0.12,
+                      "cursor": "not-allowed"
+                  }
+              }
+          }
+      },
+      "shadows": {
+          "0": "none",
+          "1": "0px 5px 10px rgba(0, 0, 0, 0.12)",
+          "2": "0px 8px 30px rgba(0, 0, 0, 0.24)",
+          "3": "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px"
+      },
+      "shape": {
+          "borderRadius": { "spacing": ["xxsmall"] }
+      }
+  }
+}
