@@ -30,6 +30,8 @@ function ScreenCapture() {
     today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds();
   const dateTime = date + ' ' + time;
 
+  // console.log(dateTime,"d--")
+
   // console.info(dateTime,"datetime90909090909099")
   // console.info(screenShotsStore, 'screenshotstore');
 

@@ -45,6 +45,7 @@ function Stopwatch({ startCapture }) {
   };
 
   // console.log(formatTime(8 * 3600 * 1000))
+  // console.log(formatTime(60000))
 
   // expDate---
   useEffect(() => {
@@ -128,8 +129,26 @@ function Stopwatch({ startCapture }) {
     setExpiryDate(expiryDate);
     setExpTimer(expiryDate - now);
     startTimer();
+    setIsToggled(true)
   };
 
+  const stopToggle = () =>{
+    if(timerOn){
+      setIsToggled(false)
+      stopTimer()
+    }else{
+      return null
+    }
+  }
+
+  const startToggle = () =>{
+    if(!timerOn){
+      setIsToggled(true)
+      startTimer()
+    }else{
+      return null
+    }
+  }
   // console.log(formatTime(expTimer),"exx--")
 
   // console.log(formatTime(1 * 30 * 1000))
@@ -196,14 +215,18 @@ function Stopwatch({ startCapture }) {
 
                 <Switch
                   defaultToggled={isToggled}
-                  onClick={() => setIsToggled(!isToggled)}
+                  // onClick={() => {setIsToggled(!isToggled);stopTimer();startTimer()}}
+                  onClick={()=>{
+                    startToggle();
+                    stopToggle()
+                  }}
                   size="lg"
                   style={{ width: '100%', justifyContent: 'flex-end' }}
                   styleSwitch={{
                     width: 90,
                     height: 40,
                     marginBottom: '15px',
-                    backgroundColor: isToggled ? '#008000' : '#fff',
+                    backgroundColor: isToggled && timerOn ? '#008000' : '#fff',
                   }}
                   styleToggle={{
                     width: 30,
