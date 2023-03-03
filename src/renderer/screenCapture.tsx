@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react/self-closing-comp */
 // / eslint-disable prefer-template /
 // / eslint-disable react-hooks/exhaustive-deps /
@@ -7,7 +9,7 @@ import { getImageList } from '../Action/storeImage';
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Stopwatch from './Stopwatch';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import {
   Container,
   Divider,
@@ -22,7 +24,9 @@ function ScreenCapture() {
   const [isToggled, setIsToggled] = useState(false);
   const [screenshot, setScreenshot] = useState(null);
   const [screenShotsStore, setScreenShotsStore] = useState<any>([]);
-
+  const { imagestore } = useSelector((state) => state.imageReducer);
+  const lastScreentShot = imagestore[imagestore.length - 1];
+  console.info(lastScreentShot, 'efsefd');
   const today = new Date();
   const date =
     today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
@@ -58,7 +62,7 @@ function ScreenCapture() {
   useEffect(() => {
     const interval = setInterval(() => {
       getCapturedScreen();
-    }, 600000); // 10 minutes
+    }, 6000); // 10 minutes
     // dispatch(getImageList(screenShotsStore));
 
     // console.log(interval, 'inter----');
@@ -73,11 +77,11 @@ function ScreenCapture() {
       <Stopwatch startCapture={getCapturedScreen} />
 
       {/* <Stopwatch startCapture={undefined} /> */}
-      
+
       <Container
         style={{
           border: '2px solid #000000',
-          borderTop:'none',
+          borderTop: 'none',
           // width: '50%',
           padding: '5px',
           margin: '0px 0px 0px 0px',
@@ -214,7 +218,9 @@ function ScreenCapture() {
                   textAlign: 'right',
                 }}
               >
-                3 mint ago
+                {lastScreentShot
+                  ? `Last capture ${lastScreentShot.dateTime} `
+                  : 'No time'}
               </Text>
             </FlexItem>
           </Flex>
