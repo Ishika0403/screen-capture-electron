@@ -45,40 +45,38 @@ function WorkDiary() {
       }}
     >
       <Section>
-          <Row style={{ padding: '0px', borderBottom: ' 1px solid #000000' }}>
-            <Flex>
-              <FlexItem>
-                <Row style={{ justifyContent: 'space-between' }}>
-                  <Text>Total: 5:00hrs</Text>
-                  <Square
-                    style={{ color: '#008000', backgroundColor: ' #008000' }}
-                  ></Square>
-                  <Text>Tracked: 5:00hrs</Text>
-                  <Square
-                    style={{ color: '#ffff00', backgroundColor: '#ffff00' }}
-                  ></Square>
-                  <Text>Manual: 5:00hrs</Text>
-                </Row>
-              </FlexItem>
+        <Flex>
+          <FlexItem>
+            <Row style={{ justifyContent: 'space-between' }}>
+              <Text>Total: 5:00hrs</Text>
+              <Square
+                style={{ color: '#008000', backgroundColor: ' #008000' }}
+              ></Square>
+              <Text>Tracked: 5:00hrs</Text>
+              <Square
+                style={{ color: '#ffff00', backgroundColor: '#ffff00' }}
+              ></Square>
+              <Text>Manual: 5:00hrs</Text>
+            </Row>
+          </FlexItem>
 
-              <FlexItem>
-                <Row style={{ justifyContent: 'end' }}>
-                  <Text> With 0:00 selected:</Text>
-                  <Button
-                    style={{
-                      marginLeft: '10px',
-                      color: '#1413125e',
-                      fontWeight: 'bolder',
-                      backgroundColor: '#00000033',
-                      border: '0px solid #54472e',
-                    }}
-                  >
-                    Edit Activities
-                  </Button>
-                </Row>
-              </FlexItem>
-            </Flex>
-          </Row>
+          <FlexItem>
+            <Row style={{ justifyContent: 'end' }}>
+              <Text> With 0:00 selected:</Text>
+              <Button
+                style={{
+                  marginLeft: '10px',
+                  color: '#1413125e',
+                  fontWeight: 'bolder',
+                  backgroundColor: '#00000033',
+                  border: '0px solid #54472e',
+                }}
+              >
+                Edit Activities
+              </Button>
+            </Row>
+          </FlexItem>
+        </Flex>
       </Section>
       <Section style={{ padding: '0px', borderBottom: ' 1px solid #000000' }}>
         <Flex
@@ -119,18 +117,17 @@ function WorkDiary() {
                 gridGap: '2px',
               }}
             >
-              {imagestore.map((itm, j) => 
-
-              <Card backgroundColor="unset" key={j}>
-                <Image src={itm.arg} style={{ width: '100%' }} />
-                <Row style={{ marginLeft: '0px' }}>
-                  <Square
-                    style={{ width: '16px', marginRight: '4px' }}
-                  ></Square>
-                  <Text>4:00 PM</Text>
-                </Row>
-              </Card>
-              )}
+              {imagestore.map((itm, j) => (
+                <Card backgroundColor="unset" key={j}>
+                  <Image src={itm.arg} style={{ width: '100%' }} />
+                  <Row style={{ marginLeft: '0px' }}>
+                    <Square
+                      style={{ width: '16px', marginRight: '4px' }}
+                    ></Square>
+                    <Text>4:00 PM</Text>
+                  </Row>
+                </Card>
+              ))}
             </Grid>
           </FlexItem>
         </Flex>
