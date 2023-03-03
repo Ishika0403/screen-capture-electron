@@ -26,7 +26,7 @@ function ScreenCapture() {
   const [screenShotsStore, setScreenShotsStore] = useState<any>([]);
   const { imagestore } = useSelector((state) => state.imageReducer);
   const lastScreentShot = imagestore[imagestore.length - 1];
-  console.info(lastScreentShot, 'efsefd');
+  // console.info(lastScreentShot, 'efsefd');
   const today = new Date();
   const date =
     today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
@@ -62,7 +62,7 @@ function ScreenCapture() {
   useEffect(() => {
     const interval = setInterval(() => {
       getCapturedScreen();
-    }, 6000); // 10 minutes
+    }, 600000); // 10 minutes
     // dispatch(getImageList(screenShotsStore));
 
     // console.log(interval, 'inter----');

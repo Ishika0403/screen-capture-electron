@@ -241,9 +241,6 @@ function Stopwatch({ startCapture }) {
                   }}
                 />
 
-                {timerOn && <button onClick={stopTimer}>Stop</button>}
-                {!timerOn && <button onClick={startTimer}>Start Again</button>}
-
                 <Text
                   style={{
                     fontSize: '18px',
