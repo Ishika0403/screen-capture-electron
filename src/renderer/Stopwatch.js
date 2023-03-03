@@ -33,19 +33,15 @@ function Stopwatch({ startCapture }) {
       .padStart(2, '0')}min :${seconds.padStart(2, '0')}sec`;
   };
 
-  const formatDateTime = (dateTime) => {
-    const date = new Date(dateTime);
-    // const year = date.getFullYear();
-    const month = (date.getMonth() + 1).toString().padStart(2, '0');
-    const day = date.getDate().toString().padStart(2, '0');
-    const hours = date.getHours().toString().padStart(2, '0');
-    const minutes = date.getMinutes().toString().padStart(2, '0');
-    const seconds = date.getSeconds().toString().padStart(2, '0');
-    return `${day} ${hours}:${minutes}:${seconds}`;
-  };
+  const formatExpirationTimer =(expTimer)=> {
+    const days = Math.floor(expTimer / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((expTimer % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((expTimer % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((expTimer % (1000 * 60)) / 1000);
+  
+    return `Session expires in: ${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds.`;
+  }
 
-  // console.log(formatTime(8 * 3600 * 1000))
-  // console.log(formatTime(60000))
 
   // expDate---
   useEffect(() => {
@@ -155,13 +151,13 @@ function Stopwatch({ startCapture }) {
 
   return (
     <>
+    {
+      !expTimer &&
       <button onClick={startSession}>Start session</button>
+    }
       5days time
       <div>
-        Session expires in :{Math.floor(expTimer / (1000 * 60 * 60 * 24))} days,{' '}
-        {Math.floor((expTimer % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))}{' '}
-        hours, {Math.floor((expTimer % (1000 * 60 * 60)) / (1000 * 60))}{' '}
-        minutes, {Math.floor((expTimer % (1000 * 60)) / 1000)} seconds.
+        {formatExpirationTimer(expTimer)}
       </div>
 
 

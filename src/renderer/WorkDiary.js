@@ -124,7 +124,7 @@ function WorkDiary() {
                     <Square
                       style={{ width: '16px', marginRight: '4px' }}
                     ></Square>
-                    <Text>4:00 PM</Text>
+                    <Text>{i.dateTime}</Text>
                   </Row>
                 </Card>
               ))}
