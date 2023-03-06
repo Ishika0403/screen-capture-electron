@@ -55,7 +55,7 @@ function Stopwatch({ startCapture }) {
         if (distance <= 0) {
           clearInterval(intervalId);
           // console.log(formatTime(expireStoreTime),"ee")
-          console.log(expireStoreTime, 'exppp');
+          // console.log(expireStoreTime, 'exppp');
 
           setExpTimer(null);
           setExpiryDate(null);
@@ -81,6 +81,7 @@ function Stopwatch({ startCapture }) {
       };
     }
   }, [expiryDate]);
+
 
   const startTimer = () => {
     setTimerOn(true);
@@ -145,6 +146,9 @@ function Stopwatch({ startCapture }) {
       return null
     }
   }
+
+  const currentDay = new Date().toLocaleString('en-US', { weekday: "short"})
+
   // console.log(formatTime(expTimer),"exx--")
 
   // console.log(formatTime(1 * 30 * 1000))
@@ -186,7 +190,8 @@ function Stopwatch({ startCapture }) {
                   {formatTime(time)}
                 </Text>
                 <Text style={{ fontSize: '18px', marginBottom: '5px' }}>
-                  Today (fri UTC)
+                {`Today (${currentDay})`}
+                  {/* Today (fri UTC) */}
                 </Text>
                 <Text
                   style={{

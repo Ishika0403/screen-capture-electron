@@ -36,6 +36,7 @@ function ScreenCapture() {
 
   const newTime = today.toLocaleString('en-US', { hour: 'numeric', hour12: true })
 
+
   // console.log(dateTime,"d--")
 
   // console.info(dateTime,"datetime90909090909099")
