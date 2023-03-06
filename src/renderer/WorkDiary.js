@@ -20,6 +20,7 @@ import {
 
 function WorkDiary() {
   const { imagestore } = useSelector((state) => state.imageReducer);
+  console.info(imagestore)
 
   return (
     // <div>
@@ -101,7 +102,8 @@ function WorkDiary() {
                 marginLeft: '13px',
               }}
             >
-              3
+            3
+              {/* {imagestore.map((i,ind)=> i.newTime)} */}
             </Text>
             <Text style={{ marginLeft: '7px' }}>pm</Text>
             <Square
@@ -124,7 +126,7 @@ function WorkDiary() {
                     <Square
                       style={{ width: '16px', marginRight: '4px' }}
                     ></Square>
-                    <Text>{i.dateTime}</Text>
+                    <Text>{itm.dateTime}</Text>
                   </Row>
                 </Card>
               ))}

@@ -21,7 +21,7 @@ import {
 } from 'components/index';
 function ScreenCapture() {
   const dispatch = useDispatch();
-  const [isToggled, setIsToggled] = useState(false);
+
   const [screenshot, setScreenshot] = useState(null);
   const [screenShotsStore, setScreenShotsStore] = useState<any>([]);
   const { imagestore } = useSelector((state) => state.imageReducer);
@@ -33,6 +33,8 @@ function ScreenCapture() {
   const time =
     today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds();
   const dateTime = date + ' ' + time;
+
+  const newTime = today.toLocaleString('en-US', { hour: 'numeric', hour12: true })
 
   // console.log(dateTime,"d--")
 
@@ -50,7 +52,7 @@ function ScreenCapture() {
       // eslint-disable-next-line no-console
       // console.log(arg);
       setScreenshot(arg);
-      setScreenShotsStore((prev: any) => [...prev, { arg, dateTime }]);
+      setScreenShotsStore((prev: any) => [...prev, { arg, dateTime,newTime }]);
 
       // setScreenShotsStore({arg,captureTime} );
       // dispatch(getImageList(screenShotsStore));
